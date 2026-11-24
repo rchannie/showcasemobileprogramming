@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Showcase Tugas Besar IK300 Mobile Programming PILKOM 5A 2024</title>
+  <meta name="description" content="Kumpulan aplikasi pembelajaran tugas besar pengganti UAS mata kuliah IK300 Mobile Programming, Program Studi Pendidikan Ilmu Komputer, FPMIPA, Universitas Pendidikan Indonesia.">
+  <meta property="og:title" content="Showcase Tugas Besar IK300 Mobile Programming PILKOM 5A 2024">
+  <meta property="og:description" content="Aplikasi pembelajaran yang dikembangkan setiap kelompok, lengkap dengan video demo, tangkapan layar, dan berkas unduhan.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="data/proyek.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#proyek">Langsung ke daftar proyek</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <img src="assets/img/logo-upi-fpmipa.png" alt="Universitas Pendidikan Indonesia, FPMIPA" class="logo logo--upi" width="741" height="118">
+      <span class="logo-divider" aria-hidden="true"></span>
+      <img src="assets/img/logo-cse.png" alt="Computer Science Education" class="logo logo--cse" width="384" height="125">
+      <img src="assets/img/logo-diktisaintek.png" alt="Diktisaintek Berdampak" class="logo logo--dikti" width="256" height="256">
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <p class="hero__eyebrow" data-isi="judulKecil">Tugas Besar Pengganti UAS</p>
+        <h1 class="hero__title"><span data-isi="mataKuliah">IK300 Mobile Programming</span> <span data-isi="kelas">PILKOM 5A 2024</span></h1>
+        <p class="hero__lead" data-isi="pengantar">Halaman ini memuat aplikasi pembelajaran yang dikembangkan setiap kelompok, lengkap dengan video demo, tangkapan layar, dan berkas unduhannya.</p>
+        <a class="btn btn--primary hero__cta" href="#proyek">
+          Lihat daftar proyek
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg>
+        </a>
+      </div>
+      <dl class="colophon">
+        <div class="colophon__row"><dt>Program Studi</dt><dd data-isi="programStudi">Pendidikan Ilmu Komputer</dd></div>
+        <div class="colophon__row"><dt>Fakultas</dt><dd data-isi="fakultas">Fakultas Pendidikan Matematika dan Ilmu Pengetahuan Alam</dd></div>
+        <div class="colophon__row"><dt>Universitas</dt><dd data-isi="universitas">Universitas Pendidikan Indonesia</dd></div>
+        <div class="colophon__row"><dt>Dosen Pengampu</dt><dd class="strong" data-isi="dosen">Erlangga, S.Kom., M.T.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <main id="proyek" class="projects">
+    <div class="container projects__inner">
+      <div class="toolbar">
+        <div class="toolbar__title">
+          <h2>Daftar Proyek</h2>
+          <p id="jumlah" class="muted" aria-live="polite"></p>
+        </div>
+        <div class="toolbar__controls">
+          <div class="control" role="group" aria-label="Pilih tampilan">
+            <span class="control__label">Tampilan</span>
+            <div class="segmented">
+              <button type="button" class="segmented__btn" data-tampilan="kartu" aria-pressed="true">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg>
+                Kartu
+              </button>
+              <button type="button" class="segmented__btn" data-tampilan="lengkap" aria-pressed="false">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="2" width="12" height="5" rx="1"/><path d="M2 10h12M2 13h8"/></svg>
+                Lengkap
+              </button>
+            </div>
+          </div>
+          <div class="control" role="group" aria-label="Saring berdasarkan jenjang">
+            <span class="control__label">Jenjang</span>
+            <div id="filter-jenjang" class="chips"></div>
+          </div>
+        </div>
+      </div>
+
+      <p id="kosong" class="empty" hidden>Belum ada proyek untuk jenjang ini.</p>
+      <div id="grid" class="card-grid"></div>
+      <div id="lengkap" class="full-list" hidden></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__logos">
+        <img src="assets/img/logo-upi-fpmipa.png" alt="Universitas Pendidikan Indonesia, FPMIPA" class="logo logo--upi-sm" width="741" height="118" loading="lazy">
+        <img src="assets/img/logo-cse.png" alt="Computer Science Education" class="logo logo--cse-sm" width="384" height="125" loading="lazy">
+        <img src="assets/img/logo-diktisaintek.png" alt="Diktisaintek Berdampak" class="logo logo--dikti-sm" width="256" height="256" loading="lazy">
+      </div>
+      <div class="site-footer__text">
+        <span><span data-isi="judulKecil">Tugas Besar Pengganti UAS</span>, <span data-isi="mataKuliah">IK300 Mobile Programming</span> <span data-isi="kelas">PILKOM 5A 2024</span></span>
+        <span>Program Studi <span data-isi="programStudi">Pendidikan Ilmu Komputer</span>, FPMIPA, <span data-isi="universitas">Universitas Pendidikan Indonesia</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="detail" class="detail-dialog" aria-label="Detail proyek">
+    <div class="detail-dialog__bar">
+      <button type="button" class="btn btn--light" data-tutup>
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg>
+        Tutup
+      </button>
+    </div>
+    <div id="detail-isi"></div>
+  </dialog>
+
+  <noscript>
+    <p class="container empty">Aktifkan JavaScript untuk melihat daftar proyek.</p>
+  </noscript>
+</body>
+</html>
