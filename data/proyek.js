@@ -75,7 +75,8 @@ window.PROYEK = [
   { kelompok: 4, nama: "", jenjang: "", deskripsiSingkat: "", fitur: [], anggota: [], tautan: {} },
   { kelompok: 5, nama: "", jenjang: "", deskripsiSingkat: "", fitur: [], anggota: [], tautan: {} },
   { kelompok: 6, nama: "", jenjang: "", deskripsiSingkat: "", fitur: [], anggota: [], tautan: {} },
-  { kelompok: 8, nama: "", jenjang: "", deskripsiSingkat: "", fitur: [], anggota: [], tautan: {} }
+  { kelompok: 8, nama: "", jenjang: "", deskripsiSingkat: "", fitur: [], anggota: [], tautan: {} },
+  { kelompok: 9, nama: "", jenjang: "", deskripsiSingkat: "", fitur: [], anggota: [], tautan: {} }
 ];
 
 /*

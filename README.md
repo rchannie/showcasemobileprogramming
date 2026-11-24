@@ -10,7 +10,7 @@ data/proyek.js             SEMUA ISI WEBSITE (cukup edit file ini)
 assets/css/style.css       tampilan
 assets/js/app.js           logika halaman (tidak perlu diubah)
 assets/img/                logo UPI-FPMIPA, CSE, dan Diktisaintek
-assets/proyek/K01 ... K08  aset tiap kelompok (logo, tangkapan layar, PDF)
+assets/proyek/K01 ... K09  aset tiap kelompok (logo, tangkapan layar, PDF)
 ```
 
 ## Mengisi data
